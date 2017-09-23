@@ -15,12 +15,14 @@ fn main() {
         .author("Phil B.")
         .arg(Arg::with_name("file")
             .help("File to backup")
-            .takes_value(true))
+            .takes_value(true)
+            .required(true)
+            .multiple(true))
         .get_matches();
 
-    if let Some(src_file) = matches.value_of("file") {
+    for src_file in matches.values_of("file").unwrap() {
         let dt: DateTime<Local> = Local::now();
-   
+
         let new_name = format!("{}_{}.bak", src_file, dt.format("%Y-%m-%d_%H-%M-%S"));
 
         let path_from = Path::new(src_file);
@@ -33,8 +35,5 @@ fn main() {
             Ok(_) => println!("\rCopied {} -> {}", path_from.to_str().unwrap(), path_to.to_str().unwrap()),
             Err(x) => println!("\n{:?}", x),
         }
-    }
-    else {
-        println!("WAT?!");
     }
 }
