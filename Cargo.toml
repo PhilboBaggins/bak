@@ -1,5 +1,5 @@
 [package]
-name = "bakt"
+name = "bak"
 version = "0.1.0"
 authors = ["Phil <PhilboBaggins@users.noreply.github.com>"]
 
@@ -7,3 +7,15 @@ authors = ["Phil <PhilboBaggins@users.noreply.github.com>"]
 chrono = "0.3.0"
 clap = "2.24.1"
 fs_extra = "1.0.0"
+
+[[bin]]
+name = "bak"
+path = "src/bak.rs"
+
+[[bin]]
+name = "bakt"
+path = "src/bakt.rs"
+
+[[bin]]
+name = "baktm"
+path = "src/baktm.rs"
