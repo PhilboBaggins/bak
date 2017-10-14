@@ -8,6 +8,10 @@ chrono = "0.3.0"
 clap = "2.24.1"
 fs_extra = "1.0.0"
 
+[lib]
+name = "bak_common"
+path = "src/common.rs"
+
 [[bin]]
 name = "bak"
 path = "src/bak.rs"
