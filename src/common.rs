@@ -26,10 +26,10 @@ pub fn bak_bak_bak(name: &str, gen_name: fn(&str) -> std::string::String) {
 
         let options = CopyOptions::new();
         let handle = |process_info: TransitProcess|
-            print!("\r{:.2}%", process_info.copied_bytes as f64 / process_info.total_bytes as f64 * 100.0);
+            eprint!("\r{:.2}%", process_info.copied_bytes as f64 / process_info.total_bytes as f64 * 100.0);
         match fs_extra::file::copy_with_progress(path_from, path_to, &options, handle) {
-            Ok(_) => println!("\rCopied {} -> {}", path_from.to_str().unwrap(), path_to.to_str().unwrap()),
-            Err(x) => println!("\n{}", x),
+            Ok(_) => eprintln!("\rCopied {} -> {}", path_from.to_str().unwrap(), path_to.to_str().unwrap()),
+            Err(x) => eprintln!("\n{}", x),
         }
     }
 }
