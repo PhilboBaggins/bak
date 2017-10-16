@@ -5,7 +5,7 @@ extern crate chrono;
 use chrono::prelude::*;
 
 fn main() {
-    bak_bak_bak("bak", |src_file| {
+    bak_bak_bak("bakt", |src_file| {
         let dt: DateTime<Local> = Local::now();
         format!("{}_{}.bak", src_file, dt.format("%Y-%m-%d_%H-%M-%S"))
     });
