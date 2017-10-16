@@ -2,7 +2,7 @@
 name = "bak"
 version = "0.1.0"
 dependencies = [
- "chrono 0.3.0 (registry+https://github.com/rust-lang/crates.io-index)",
+ "chrono 0.4.0 (registry+https://github.com/rust-lang/crates.io-index)",
  "clap 2.24.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "fs_extra 1.0.0 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
@@ -29,7 +29,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 
 [[package]]
 name = "chrono"
-version = "0.3.0"
+version = "0.4.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 dependencies = [
  "num 0.1.37 (registry+https://github.com/rust-lang/crates.io-index)",
@@ -162,7 +162,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 "checksum ansi_term 0.9.0 (registry+https://github.com/rust-lang/crates.io-index)" = "23ac7c30002a5accbf7e8987d0632fa6de155b7c3d39d0067317a391e00a2ef6"
 "checksum atty 0.2.2 (registry+https://github.com/rust-lang/crates.io-index)" = "d912da0db7fa85514874458ca3651fe2cddace8d0b0505571dbdcd41ab490159"
 "checksum bitflags 0.8.2 (registry+https://github.com/rust-lang/crates.io-index)" = "1370e9fc2a6ae53aea8b7a5110edbd08836ed87c88736dfabccade1c2b44bff4"
-"checksum chrono 0.3.0 (registry+https://github.com/rust-lang/crates.io-index)" = "158b0bd7d75cbb6bf9c25967a48a2e9f77da95876b858eadfabaa99cd069de6e"
+"checksum chrono 0.4.0 (registry+https://github.com/rust-lang/crates.io-index)" = "7c20ebe0b2b08b0aeddba49c609fe7957ba2e33449882cb186a180bc60682fa9"
 "checksum clap 2.24.1 (registry+https://github.com/rust-lang/crates.io-index)" = "b7541069be0b8aec41030802abe8b5cdef0490070afaa55418adea93b1e431e0"
 "checksum fs_extra 1.0.0 (registry+https://github.com/rust-lang/crates.io-index)" = "d812bdfa1a960a37ad4e61c8fc4078a74c711f607ed98c587055274a2a7c9d4c"
 "checksum kernel32-sys 0.2.2 (registry+https://github.com/rust-lang/crates.io-index)" = "7507624b29483431c0ba2d82aece8ca6cdba9382bff4ddd0f7490560c056098d"

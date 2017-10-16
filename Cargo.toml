@@ -4,7 +4,7 @@ version = "0.1.0"
 authors = ["Phil <PhilboBaggins@users.noreply.github.com>"]
 
 [dependencies]
-chrono = "0.3.0"
+chrono = "0.4.0"
 clap = "2.24.1"
 fs_extra = "1.0.0"
 
