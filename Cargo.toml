@@ -5,7 +5,7 @@ authors = ["Phil <PhilboBaggins@users.noreply.github.com>"]
 
 [dependencies]
 chrono = "0.4.0"
-clap = "2.24.1"
+clap = "2.29.2"
 fs_extra = "1.0.0"
 
 [lib]
