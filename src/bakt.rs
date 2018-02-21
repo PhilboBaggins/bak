@@ -1,8 +1,8 @@
-extern crate bak_common;
-use bak_common::bak_bak_bak;
-
 extern crate chrono;
 use chrono::prelude::*;
+
+extern crate bak_common;
+use bak_common::bak_bak_bak;
 
 fn main() {
     let name = "bakt";
