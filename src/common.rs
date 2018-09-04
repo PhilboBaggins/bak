@@ -1,12 +1,12 @@
 extern crate clap;
 extern crate fs_extra;
 
-use std::path::Path;
 use clap::{App, Arg};
+use std::path::Path;
 //use fs_extra::file::copy_with_progress;
 use fs_extra::file::*;
 
-pub fn bak_bak_bak(name: &str, description : &str, gen_name: fn(&str) -> std::string::String) {
+pub fn bak_bak_bak(name: &str, description: &str, gen_name: fn(&str) -> std::string::String) {
     let matches = App::new(name)
         .version("1.0")
         .about(description)
