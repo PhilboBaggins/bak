@@ -1,6 +1,7 @@
 [package]
 name = "bak-bak-bak"
 version = "0.1.0"
+edition = "2018"
 authors = ["Phil <PhilboBaggins@users.noreply.github.com>"]
 
 [dependencies]
