@@ -3,6 +3,9 @@ name = "bak-bak-bak"
 version = "0.1.0"
 edition = "2018"
 authors = ["Phil <PhilboBaggins@users.noreply.github.com>"]
+description = "Simple command line tools to backup files"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/PhilboBaggins/bak"
 
 [dependencies]
 chrono = "0.4.0"
