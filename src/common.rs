@@ -1,14 +1,14 @@
 extern crate clap;
 extern crate fs_extra;
 
-use clap::{App, Arg};
 use std::path::Path;
+use clap::{App, Arg, crate_version};
 //use fs_extra::file::copy_with_progress;
 use fs_extra::file::*;
 
 pub fn bak_bak_bak(name: &str, description: &str, gen_name: fn(&str) -> std::string::String) {
     let matches = App::new(name)
-        .version("1.0")
+        .version(crate_version!())
         .about(description)
         .author("Phil B.")
         .arg(Arg::with_name("file")
